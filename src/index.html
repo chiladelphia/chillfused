@@ -1,22 +1,34 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
     <head>
-
         <title>Fuse Angular - Material Design Admin Template</title>
-        <base href="/">
+        <base href="/" />
 
-        <meta charset="utf-8">
-        <meta name="description" content="Material design admin template with pre-built apps and pages">
-        <meta name="keywords"
-              content="HTML,CSS,AngularJS,Angular,Angular 2,Angular 4,Angular 5,Angular 6,Angular 7,Angular 8,Angular 9,Angular 10,Material,Material 2">
-        <meta name="author" content="Withinpixels">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <meta charset="utf-8" />
+        <meta
+            name="description"
+            content="Material design admin template with pre-built apps and pages"
+        />
+        <meta
+            name="keywords"
+            content="HTML,CSS,AngularJS,Angular,Angular 2,Angular 4,Angular 5,Angular 6,Angular 7,Angular 8,Angular 9,Angular 10,Material,Material 2"
+        />
+        <meta name="author" content="Withinpixels" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+        />
 
-        <link rel="icon" type="image/x-icon" href="favicon.ico">
-        <link href="assets/icons/meteocons/style.css" rel="stylesheet">
-        <link href="assets/icons/material-icons/outline/style.css" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Muli:300,400,600,700" rel="stylesheet">
+        <link rel="icon" type="image/x-icon" href="favicon.ico" />
+        <link href="assets/icons/meteocons/style.css" rel="stylesheet" />
+        <link
+            href="assets/icons/material-icons/outline/style.css"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css?family=Muli:300,400,600,700"
+            rel="stylesheet"
+        />
 
         <!-- FUSE Splash Screen CSS -->
         <style type="text/css">
@@ -27,7 +39,7 @@
                 left: 0;
                 right: 0;
                 bottom: 0;
-                background-color: #2D323D;
+                background-color: #2d323d;
                 z-index: 99999;
                 pointer-events: none;
             }
@@ -46,7 +58,7 @@
             }
 
             #fuse-splash-screen .logo img {
-                filter: drop-shadow(0px 10px 6px rgba(0, 0, 0, 0.2))
+                filter: drop-shadow(0px 10px 6px rgba(0, 0, 0, 0.2));
             }
 
             #fuse-splash-screen .spinner-wrapper {
@@ -69,7 +81,8 @@
                 width: 100px;
                 height: 100px;
                 position: relative;
-                animation: sporadic-rotate 5.25s cubic-bezier(0.35, 0, 0.25, 1) infinite;
+                animation: sporadic-rotate 5.25s cubic-bezier(0.35, 0, 0.25, 1)
+                    infinite;
             }
 
             #fuse-splash-screen .spinner-wrapper .spinner .inner .gap {
@@ -91,14 +104,24 @@
                 overflow: hidden;
             }
 
-            #fuse-splash-screen .spinner-wrapper .spinner .inner .left .half-circle,
-            #fuse-splash-screen .spinner-wrapper .spinner .inner .right .half-circle {
+            #fuse-splash-screen
+                .spinner-wrapper
+                .spinner
+                .inner
+                .left
+                .half-circle,
+            #fuse-splash-screen
+                .spinner-wrapper
+                .spinner
+                .inner
+                .right
+                .half-circle {
                 position: absolute;
                 top: 0;
                 width: 100px;
                 height: 100px;
                 box-sizing: border-box;
-                border: 10px solid #4285F4;
+                border: 10px solid #4285f4;
                 border-bottom-color: transparent;
                 border-radius: 50%;
             }
@@ -107,22 +130,36 @@
                 left: 0;
             }
 
-            #fuse-splash-screen .spinner-wrapper .spinner .inner .left .half-circle {
+            #fuse-splash-screen
+                .spinner-wrapper
+                .spinner
+                .inner
+                .left
+                .half-circle {
                 left: 0;
                 border-right-color: transparent;
-                animation: left-wobble 1.3125s cubic-bezier(0.35, 0, 0.25, 1) infinite;
-                -webkit-animation: left-wobble 1.3125s cubic-bezier(0.35, 0, 0.25, 1) infinite;
+                animation: left-wobble 1.3125s cubic-bezier(0.35, 0, 0.25, 1)
+                    infinite;
+                -webkit-animation: left-wobble 1.3125s
+                    cubic-bezier(0.35, 0, 0.25, 1) infinite;
             }
 
             #fuse-splash-screen .spinner-wrapper .spinner .inner .right {
                 right: 0;
             }
 
-            #fuse-splash-screen .spinner-wrapper .spinner .inner .right .half-circle {
+            #fuse-splash-screen
+                .spinner-wrapper
+                .spinner
+                .inner
+                .right
+                .half-circle {
                 right: 0;
                 border-left-color: transparent;
-                animation: right-wobble 1.3125s cubic-bezier(0.35, 0, 0.25, 1) infinite;
-                -webkit-animation: right-wobble 1.3125s cubic-bezier(0.35, 0, 0.25, 1) infinite;
+                animation: right-wobble 1.3125s cubic-bezier(0.35, 0, 0.25, 1)
+                    infinite;
+                -webkit-animation: right-wobble 1.3125s
+                    cubic-bezier(0.35, 0, 0.25, 1) infinite;
             }
 
             @keyframes outer-rotate {
@@ -135,7 +172,8 @@
             }
 
             @keyframes left-wobble {
-                0%, 100% {
+                0%,
+                100% {
                     transform: rotate(130deg);
                 }
                 50% {
@@ -144,7 +182,8 @@
             }
 
             @keyframes right-wobble {
-                0%, 100% {
+                0%,
+                100% {
                     transform: rotate(-130deg);
                 }
                 50% {
@@ -183,14 +222,11 @@
     </head>
 
     <body>
-
         <!-- FUSE Splash Screen -->
         <fuse-splash-screen id="fuse-splash-screen">
-
             <div class="center">
-
                 <div class="logo">
-                    <img width="128" src="assets/images/logos/fuse.svg">
+                    <img width="128" src="assets/images/logos/fuse.svg" />
                 </div>
 
                 <!-- Material Design Spinner -->
@@ -208,14 +244,19 @@
                     </div>
                 </div>
                 <!-- / Material Design Spinner -->
-
             </div>
-
         </fuse-splash-screen>
         <!-- / FUSE Splash Screen -->
 
         <app></app>
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="/__/firebase/8.7.0/firebase-app.js"></script>
 
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+        <script src="/__/firebase/8.7.0/firebase-analytics.js"></script>
+
+        <!-- Initialize Firebase -->
+        <script src="/__/firebase/init.js"></script>
     </body>
-
 </html>
